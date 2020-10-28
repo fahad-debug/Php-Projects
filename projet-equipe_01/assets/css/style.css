@@ -1,0 +1,658 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+/* ------------------- NAVIGATION ------------------- */
+
+.nav-container {
+    background-color: #0081A2;  
+    background-image: linear-gradient(90deg, #00DEF2, #0081A2);
+    width: 100%;
+    height: 100px;
+    padding: 40px 50px 0px 50px;
+    text-align: right;
+    position: fixed;
+}
+
+.nav-container a{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    color: #003644;
+}
+
+.nav-container .separateur {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.brand-logo {
+    margin-top: -17px;
+    display: block;
+    float: left;
+}
+
+/* ------------------- SUB HEADER ------------------- */
+
+.subpage-header{
+    background-color: #FFFFFF;
+    background-image: url("../img/seaside-994605.jpg");
+    margin-top: 0px;
+    height: 571px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding-left: 30%;
+    /* Pour faire en Parallaxe */
+    /* background-attachment: fixed; */
+}
+
+.subpage-header h1 {
+    color: #162F37;
+    font-size: 70px;
+    padding-top: 155px;
+    margin: 0px;
+}
+
+.subpage-header p {
+    color: #505D79;
+    font-size: 23px;
+    line-height: 28px;
+    width: 540px; 
+}
+
+/* ------------------- MAIN ------------------- */
+
+main {
+    padding: 40px 50px 15px 50px;
+}
+
+h2 {
+    color: #FD2C84;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 0px 30px 0px;
+}
+
+h3 {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: -14px;
+}
+
+.soustitre-admin {
+    margin-bottom: 30px; 
+}
+
+h4 {
+    color: #00ABBB;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: -14px;
+}
+
+h5 {
+    color: #9A784E;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: -27px;
+}
+
+h6 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 18px;
+}
+
+.prix {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.listeDestination {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.listeDestination .destination{
+    width: calc(100% / 3 - 3%);
+    /* POUR CHOISIR L'ORDRE D'AFFICHAGE DES ELEMENTS */
+    order: 10;
+}
+    
+.destination.pension {
+    /* EXCEPTION : J'OUTREPASSE L'ORDRE DE LA REQUETE ET JE METS LES 
+    ARTICLESCATEGORIE "pension" EN PRIORITAIRE DANS L'ORDRE D'AFFICHAGE */
+    order: 1;
+    /* ET JE PEUX L'AGRANDIR */
+    /* width: 60%; */
+}
+
+.destination img {
+    width: 100%;
+    /* height: 270px; */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.destination p {
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+.destination .bouton {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    background-color: #FD2C84;
+    padding: 14px 20px;
+    border-radius: 8px;
+    float: right;
+    margin-top: -36px;
+    margin-bottom: 40px;
+}
+
+.destination .bouton:hover {
+    /* background-color: #CA1C65;
+    background-image: linear-gradient(0deg, #FD2C84, #C1135C); */
+    box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
+}
+
+/* ------------------- FOOOTER ------------------- */
+
+footer {
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #0081A2;  
+    background-image: linear-gradient(90deg, #0081A2, #00DEF2);
+    width: 100%;
+    padding: 50px 50px 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* sticky footer */
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+}
+
+footer .bloc {
+    width: calc(100% / 2 - 0px);
+    margin-right: 0px;
+}
+
+footer h1 {
+    color: #003644;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 22px;
+}
+
+footer a {
+    color: #003644;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-bottom: 22px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer .separateur {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+footer .mail {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer .mail:hover{
+    color: #003644;
+}
+
+/* ------------------- FORMULAIRES ------------------- */
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* POUR SELECTIONNER TOUTES LES BALISES ENFANTS DIRECTS DE LA BALISE PARENTE FORM */
+form > * {
+    margin: 6px 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 1px solid #b5b5b5;
+    background-color: #ece9e9;
+    
+}
+
+form label {
+    margin: 12px 0px 1px 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px;
+    background-color: inherit;
+}
+
+.titre-paiement {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 25px 0px 0px 0px;
+}
+
+.payment {
+    display:inline;
+    font-size:30px;
+} 
+
+.titre-recherche {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 25px 0px 12px 0px;
+}
+
+.recherche {
+    margin-bottom: 30px;
+}
+
+form button {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: #FD2C84;
+    padding: 20px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    /* background-color: #CA1C65;
+    background-image: linear-gradient(0deg, #FD2C84, #C1135C); */
+    box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
+}
+
+.confirmation {
+    margin: 6px 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: inherit;
+}
+
+
+.password-input {
+    margin: -6px 0px 2px -4px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: #FFFFFF;
+    width: 262px;
+}
+
+/* ------------------------------------------------ */
+
+table {
+    width:100%;
+}
+table thead {
+    background-color: #aaaaaa;
+}
+td {
+    border:1px solid #aaaaaa;
+    padding:0.25rem;
+}
+
+.cache{
+    display:none;
+}
+
+section.updateSection{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    z-index: 999;
+    padding: 2rem;
+}
+
+form .infoUpdate{
+    display:flex;
+    width:100%;
+    flex-direction:column;
+}
+
+.infoUpdate>* {
+    margin: 0.25rem;
+    padding:0.25rem;
+}
+
+/* MEDIA QUERIES */
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 1024px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 27%;
+    }
+
+    .subpage-header h1 {
+        font-size: 64px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 27%;
+    }
+    
+    .subpage-header h1 {
+        font-size: 60px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+
+    .subpage-header p {
+        color: #505D79;
+        font-size: 22px;
+        line-height: 26px;
+        width: 520px; 
+    }
+
+    .destination .bouton {
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 852px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 26%;
+    }
+    
+    .subpage-header h1 {
+        font-size: 55px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+
+    .destination .bouton {
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-container a{
+        padding: 5px;
+    }
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 24%;
+    }
+
+    .subpage-header h1 {
+        font-size: 50px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+    
+    .subpage-header p {
+        color: #505D79;
+        font-size: 22px;
+        line-height: 26px;
+        width: 520px; 
+    }
+    
+    .listeDestination .destination{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .destination .bouton {
+        width: 200px;
+    }
+
+    footer .bloc {
+        width: 100%;
+        margin: 0px;
+    }
+
+    footer h1 {
+        margin-top: 15px;
+        margin-bottom: 22px;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .subpage-header p {
+        color: #505D79;
+        font-size: 22px;
+        line-height: 26px;
+        width: 80%; 
+    }
+
+}
+
+/*_______ FORMULAIRE DE RECHERCHE _______*/ 
+
+.hidden{
+    display:none;}
+    
+    
+    .sections{
+    
+        height: 55%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        justify-content: center;
+      }
+    
+    
+    
+    
+    button.cherche{
+        width: 10%;
+        border: 2px solid black;
+        background: none;
+        color:white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        border-color: #FD2C84;
+    
+    
+    
+    }
+    button.cherche:hover{
+    
+        background-color: #FD2C84;
+        color:white;
+    
+    }
+    .search{
+        text-align: center;
+        width:100%;
+        margin:0;
+        padding:0;
+        display:block;
+        margin-top:200px;
+    
+    
+    
+    }
+    
+    .inp { 
+        background:white;
+        border:hidden;
+    
+        outline:5px solid ;
+        width: 30%;
+       
+    
+       
+    }
+    .btns {
+        
+    color:white;
+    border:none;
+    font-size:20px;
+    
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background:none;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    font-size:17px;
+    
+    }
+    
+    .btns :hover{ 
+    color: #003644;}
+    
+    
+    .annuler:hover {
+        color: #ccc;
+      }
+    button.annuler{
+        border:none;
+      position: fixed;
+     left: 97%;
+     top:-1%;
+    
+    cursor:pointer;
+    color:white;
+    font-size:60px;
+    background:none;
+        }
+    
+       .client{
+        text-align:center;
+        font-size:49px;
+        color:white;
+    }
+    
+    .act :hover{
+        color: #ccc;
+    }
+    .act{
+    
+        border:none;
+        position: fixed;
+     
+      top:5px;
+      cursor:pointer;
+      color:white;
+      font-size:40px;
+      background:none;
+    }
+    
+    /*___________ FINI POUR LA FORMULAIRE DE RECHERCHE ______________*/

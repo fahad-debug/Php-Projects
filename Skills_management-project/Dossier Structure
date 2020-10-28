@@ -1,0 +1,67 @@
+ 
+                SKills_management-project
+                          |
+                          |---assets
+                          |       |__css
+                          |       |   |___style.css
+                          |       |
+                          |       |__img
+                          |       |
+                          |       |
+                          |       |
+                          |       |__js
+                          |       |  |___app.js
+                          |
+                          |----php          
+                          |     |             
+                          |     |             
+                          |     |----class
+                          |     |       |__Api.php                         
+                          |     |       |__Application.php 
+                          |     |       |   
+                          |     |       |__HandelUser.php 
+                          |     |       |                  
+                          |     |       |__Model.php  
+                          |     |                            
+                          |     |      
+                          |     |       
+                          |     |      
+                          |     | 
+                          |     |----view
+                          |     |      |___header.php
+                          |     |      |
+                          |     |      |__footer.php
+                          |     |      |
+                          |     |      |__section.admin.php
+                          |     |      |
+                          |     |      |__section.index.php
+                          |     |      | 
+                          |     |      |__section-logout.php
+                          |     |
+                          | 
+                          |
+                          |      
+                          |                                
+                          |-----index.php
+                            
+                            
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
